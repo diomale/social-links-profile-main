@@ -1,44 +1,78 @@
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
-
-body {
+.attribution {
+  font-size: 11px;
   text-align: center;
-  font-family: 'Kumbh Sans', sans-serif;
-  background-color: hsl(0, 0%, 0%);
-  max-height: 100vh;
-  width: 100vh;
-  margin: 0;
-  padding: 50vh;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
-.profile-card{
-  background-color: rgb(37, 37, 37);
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Layout */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: hsl(0, 0%, 8%);
   color: white;
-  border-radius: 15px;
-  padding: 20px;
-  width: 100%;
-  max-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
-.profile-subhead{
-  color: khaki;
+/* Profile Card */
+.profile-card {
+  background-color: rgb(37, 37, 37);
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 380px; /* controlled width */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.profile-button a{
-  text-decoration: none;
-  color: white;
-  background-color: hsl(228, 45%, 44%);
-  padding: 10px;
-  border-radius: 10px; 
-  columns: 100px 1;
+/* Profile Subhead */
+.profile-subhead {
+  color: khaki;
+  font-size: small;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+/* Buttons container */
+.profile-button {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  gap: 12px;
+  margin-top: 20px;
 }
 
-.profile-button{
-  gap: 100%;
-  height: 50%;
-  padding: 30px;
+/* Individual buttons */
+.profile-button a {
+  text-decoration: none;
+  color: white;
+  background-color: hsl(0, 0%, 24%);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.profile-button a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+}
+
+/* Profile Image */
+img{
+  border-radius: 50%;
+  height: 100px;
+  width: auto;
 }
