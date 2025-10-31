@@ -1,0 +1,44 @@
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: hsl(0, 0%, 0%);
+  max-height: 100vh;
+  width: 100vh;
+  margin: 0;
+  padding: 50vh;
+}
+
+.profile-card{
+  background-color: rgb(37, 37, 37);
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 100vh;
+  height: 100vh;
+}
+
+.profile-subhead{
+  color: khaki;
+}
+
+.profile-button a{
+  text-decoration: none;
+  color: white;
+  background-color: hsl(228, 45%, 44%);
+  padding: 10px;
+  border-radius: 10px; 
+  columns: 100px 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.profile-button{
+  gap: 100%;
+  height: 50%;
+  padding: 30px;
+}
